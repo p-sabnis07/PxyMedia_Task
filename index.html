@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>Workout Buddy</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="WorkoutBuddy Health & Fitness Club">
+        <meta name="" content="WorkoutBuddy Health & Fitness Club">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/images/fitness.png">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Fontawesome Css -->
+        <link href="assets/css/fontawesome.css" rel="stylesheet">
+
+        <!-- owl carousel Css -->
+        <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+
+        <!--Custom Css-->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+     </head>
+      <style>
+        .owl-dots {
+            display: none;
+        }
+
+        @media (min-width:300px) and (max-width: 400px) {
+            
+            .social-ul li a {
+            width: 23px;
+            display: block;
+            height: 23px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 0px 0;
+            background-color: var(--secondary-bg2);
+        }
+
+        footer .social-ul {
+            display: flex;
+            flex-wrap: nowrap;
+            max-width: 90px;
+            margin-left: auto;
+        }
+
+        .main-footer {
+        padding-top: 150px !important;
+            padding-left: 110px;
+            position: relative;
+            padding-bottom: 90px !important;
+        }
+
+        .main-footer {
+        background-image: url("assets/images/builder.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 210px;
+        }
+        .contact-header-ul li a {
+        font-size: 10px;
+        position: relative;
+        }
+        }
+    </style>
+<body>
+    <!-- Modal -->
+    <div class="modal fade inquiry-modal" id="Inquiry-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body p-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="partner-form">
+                        <form method="post" action="" id="TopForm" name="TopForm" class="contact-form">
+                <input type="hidden" name="utm_source" value="facebook">
+                <input type="hidden" name="utm_medium" value="franchise">
+                <input type="hidden" name="utm_campaign" value="">
+                <input type="hidden" name="utm_content" value="">
+                <input type="hidden" name="utm_term" value="">
+                <h1 class="text-uppercase text-primary extrabold mb-4">Communicate with us</h1>
+                <div class="mb-3">
+                <input type="text" class="form-control" name="full_name" placeholder="Name*">
+                </div>
+                <div class="mb-3">
+                <input type="text" maxlength="10" class="form-control" placeholder="Mobile*" name="phone_number">
+                </div>
+                <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email*" name="email_address">
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control" placeholder="City*" name="city">
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control" placeholder="State*" name="state">
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Pincode*" name="pincode">
+                </div>
+                <div class="mb-3">
+                <select class="form-control" name="budget">
+                    <option value="">Select Budget</option>
+                    <option value="5 Crores">5 Crores</option>
+                    <option value="7 Crores">7 Crores</option>
+                    <option value="10 Crores">10 Crores</option>
+                    <option value="15 Crores">15 Crores</option>
+                </select>
+                </div>
+                <div class="btn-div">
+                <input type="hidden" name="senddata" id="senddata" value="TopForm">
+                <input type="hidden" name="token" value="">
+                <button type="submit" id="top_btn" class="btn btn-primary w-100"> Verify & Submit </button>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <header class="main-header py-4 bg-primary">
+    <div class="container">
+        <div class="row align-items-center">
+        <div class="col-3 col-sm-4 col-sm-4">
+            <div class="logo-div"> <img src="assets/images/logo.png" alt="img" width="200"> </div>
+        </div>
+        <div class="col-9 col-sm-8 col-sm-8">
+            <div class="contact-detail-div">
+            <ul class="contact-header-ul">
+                <li> <a href="tel:+91-6789896788" > <img src="assets/images/phone-icon.png" width="15"> +91-2267160000 </a> </li>
+                <li> <a href="tel:+91-9152484423"> <i class="fa-brands fa-whatsapp"></i> +91-9152484423 </a> </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+    <div class="banner-section" style="background: url('assets/images/banner-bg.jpg')">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-7">
+            <div class="content-div">
+            <h1 class="gradiund-text mb-4 mb-md-5">Empowering you to become your best<br>by providing a professional gym</h1>
+            <!-- <div class="d-block d-md-none mb-3">
+                <div class="keyofferings-slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="b-icon-div"> <img src="assets/images/bannericon1.svg" width="50">
+                    <h5>Power Growth<br>
+                        & Rapid Improvement</h5>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="b-icon-div"> <img src="assets/images/bannericon2.svg" width="50">
+                    <h5> Exclusive<br>
+                        Equipments</h5>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="b-icon-div"> <img src="assets/images/bannericon3.svg" width="50">
+                    <h5> Operational<br>
+                        Support </h5>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="b-icon-div"> <img src="assets/images/bannericon4.svg" width="50">
+                    <h5> Merchandising<br>
+                        Support </h5>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="b-icon-div"> <img src="assets/images/bannericon5.svg" width="50">
+                    <h5> Marketing<br>
+                        Support </h5>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="b-icon-div"> <img src="assets/images/bannericon6.svg" width="50">
+                    <h5> ₹ 2,500 Cr* Solitaire<br>
+                        Inventory Access With<br>
+                        No additional Investment </h5>
+                    </div>
+                </div>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-6">
+                <div class="b-icon-div"> <img src="assets/images/bannericon1.svg" width="50">
+                    <h5> Power Growth<br>
+                    & Rapid Improvement </h5>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="b-icon-div"> <img src="assets/images/bannericon2.svg" width="50">
+                    <h5> Exclusive<br>
+                    Equipments</h5>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="b-icon-div"> <img src="assets/images/bannericon3.svg" width="50">
+                    <h5> Full<br>
+                    Support </h5>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="b-icon-div"> <img src="assets/images/bannericon4.svg" width="50">
+                    <h5> Large<br>
+                    Cardio Theateres </h5>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="b-icon-div"> <img src="assets/images/bannericon5.svg" width="50">
+                    <h5> Marketing<br>
+                    Support </h5>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="b-icon-div"> <img src="assets/images/bannericon6.svg" width="50">
+                    <h5> ₹ 2,500 Cr* Solitaire<br>
+                    Inventory Access With<br>
+                    No additional Investment </h5>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="partner-form">
+            <h1 class="text-uppercase text-primary extrabold mb-4"> Contact with us </h1>
+                        <form method="post" action="" id="MiddleForm" name="MiddleForm" accept-charset="UTF-8" class="contact-form">
+                <input type="hidden" name="utm_source" value="facebook">
+                <input type="hidden" name="utm_medium" value="franchise">
+                <input type="hidden" name="utm_campaign" value="">
+                <input type="hidden" name="utm_content" value="">
+                <input type="hidden" name="utm_term" value="">
+                <div class="mb-3">
+                <input type="text" class="form-control" name="full_name" placeholder="Name*">
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control" maxlength="10" placeholder="Mobile*" name="phone_number">
+                </div>
+                <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email*" name="email_address">
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control" placeholder="City*" name="city">
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control" placeholder="State*" name="state">
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Pincode*" name="pincode">
+                </div>
+                <div class="mb-3">
+                <select class="form-control" name="budget">
+                    <option value="">Select Budget</option>
+                    <option value="5 Crores">5 Crores</option>
+                    <option value="7 Crores">7 Crores</option>
+                    <option value="10 Crores">10 Crores</option>
+                    <option value="15 Crores">15 Crores</option>
+                </select>
+                </div>
+                <div class="btn-div">
+                <input type="hidden" name="senddata" id="senddata" value="MiddleForm">
+                <input type="hidden" name="token" value="">
+                <button type="submit" id="middle_btn" class="btn btn-primary w-100"> Verify & Submit </button>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="our-core-management overflow-hidden bg-primary">
+    <div class="investment-requirements-section bg-white py-3 py-sm-5">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="title-div">
+                <h1 class="text-primary text-center text-md-start bold mb-5">Investment Requirements</h1>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="invest-box">
+                <div class="invest-img"> <img src="assets/images/icon1.svg" width="100"> </div>
+                <div class="invest-details">
+                <h4 class="text-primary">Interiors:</h4>
+                <h4 class="bold text-primary">₹ 40-50 Lac.</h4>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="invest-box inventory-box">
+                <div class="invest-img"> <img src="assets/images/icon2.svg" width="50"> </div>
+                <div class="invest-details">
+                <h4 class="text-primary">Inventory:</h4>
+                <h4 class="bold text-primary">₹ 5Cr.Onwards</h4>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="invest-box">
+                <div class="invest-img"> <img src="assets/images/icon3.png" width="70"> </div>
+                <div class="invest-details">
+                <h4 class="text-primary">Store Size:</h4>
+                <h4 class="bold text-primary">800-1200 Sq. Ft.</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="our-management-section position-relative pt-5 pb-5 pt-sm-5 pb-sm-5">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h1 class="text-white text-center text-md-start bold mb-3">Unwavering Determination</h1>
+            </div>
+            <div class="col-md-12">
+            <div class="d-none d-sm-none d-md-block">
+                <div class="our-core-slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="management-box">
+                    <div class="managment-img overflow-hidden mb-3"> <img src="assets/images/team1.jpg" class="img-fluid" alt="img"> </div>
+                    <div class="managment-name">
+                        <h5 class="text-2"> Savji Dholakia </h5>
+                        <h5 class="text-2"> (Founder and Chairman) </h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="management-box">
+                    <div class="managment-img overflow-hidden mb-3"> <img src="assets/images/team2.jpg" class="img-fluid" alt="img"> </div>
+                    <div class="managment-name">
+                        <h5 class="text-2"> Ghanshyam Dholakia </h5>
+                        <h5 class="text-2"> (Founder & MD) </h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="management-box">
+                    <div class="managment-img overflow-hidden mb-3"> <img src="assets/images/team3.jpg" class="img-fluid" alt="img"> </div>
+                    <div class="managment-name">
+                        <h5 class="text-2"> Parag Shah </h5>
+                        <h5 class="text-2"> (Director) </h5>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- <div class="d-block d-sm-block d-md-none">
+                <div class="our-core-slider-mobile owl-carousel owl-theme">
+                <div class="item">
+                    <div class="management-box">
+                    <div class="managment-img overflow-hidden mb-3"> <img src="assets/images/team1.png" class="img-fluid" alt="img"> </div>
+                    <div class="managment-name">
+                        <h5 class="text-2"> Savji Dholakia </h5>
+                        <h5 class="text-2"> (Founder and Chairman) </h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="management-box">
+                    <div class="managment-img overflow-hidden mb-3"> <img src="assets/images/team2.png" class="img-fluid" alt="img"> </div>
+                    <div class="managment-name">
+                        <h5 class="text-2"> Ghanshyam Dholakia </h5>
+                        <h5 class="text-2"> (Founder & MD) </h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="management-box">
+                    <div class="managment-img overflow-hidden mb-3"> <img src="assets/images/team3.png" class="img-fluid" alt="img"> </div>
+                    <div class="managment-name">
+                        <h5 class="text-2"> Parag Shah </h5>
+                        <h5 class="text-2"> (Director) </h5>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div> -->
+            </div>
+            <div class="col-md-12">
+            <h5 class="text-white sm-regular text-center mt-4"> We believe in teamwork, and our Core Management team is ready to help you succeed! </h5>
+            </div>
+            <div class="col-md-12 text-center mt-4"> <a href="#" data-bs-target="#Inquiry-Modal" data-bs-toggle="modal" class="btn btn-lg btn2 btn-anim"> Franchise Enquiry </a> </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="kisna-section overflow-hidden position-relative pb-4 pb-sm-5 bg-primary">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-white text-center text-md-start bold mb-3">Echoes of Enchantment</h1>
+        </div>
+        <div class="col-md-5">
+            <div class="kisna-img"> <img src="assets/images/tales-img.jpg" width="100%" class="img-fluid"> </div>
+        </div>
+        <div class="col-md-7">
+            <div class="kisna-content">
+            <p class="text-white mb-3">In the cosmic tapestry of possibilities, randomness weaves its unpredictable threads. Imagine a realm where serendipity dances with chaos, creating a symphony of unforeseen narratives. From the whimsical whispers of chance emerges a cascade of words, forming sentences that defy expectations and traverse the uncharted  </p>
+            <p class="text-white"> territories of imagination. In this kaleidoscope of linguistic spontaneity, each phrase is a brushstroke on the canvas of unpredictability, painting a picture of randomness that invites curiosity and embraces the beauty of the unexpected. </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#Inquiry-Modal" class="btn btn2 brochure-btn">Download Brochure</a> </div>
+    <div class="sparkling-section py-3 py-sm-5 bg2">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <h1 class="bold mb-4 mb-md-5 text-center text-md-start text-primary">Sparkling & Starry <br class="d-md-none d-block d-sm-block">
+            Franchise Launches</h1>
+        </div>
+        <div class="col-md-12">
+            <div class="sparkling-slider-div">
+            <div class="sparkling-slider owl-carousel owl-theme">
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Ayodhya</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Ayodhya/Ayodhya1.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Ayodhya</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Ayodhya/Ayodhya2.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Ayodhya</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Ayodhya/Ayodhya3.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Ayodhya</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Ayodhya/Ayodhya4.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Bareilly</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Bareilly/Bareilly1.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Bareilly</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Bareilly/Bareilly2.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Bareilly</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Bareilly/Bareilly3.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Bareilly</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Bareilly/Bareilly4.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Bareilly</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Bareilly/Bareilly5.jpg" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Delhi Dwarka</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Delhi-Dwarka/Delhi-Dwarka1.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Delhi Dwarka</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Delhi-Dwarka/Delhi-Dwarka1.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Delhi Dwarka</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Delhi-Dwarka/Delhi-Dwarka2.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Delhi Dwarka</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Delhi-Dwarka/Delhi-Dwarka3.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Delhi Dwarka</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Delhi-Dwarka/Delhi-Dwarka4.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Delhi Dwarka</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Delhi-Dwarka/Delhi-Dwarka5.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hisar</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hisar/Hisar1.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hisar</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hisar/Hisar2.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hisar</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hisar/Hisar3.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hisar</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hisar/Hisar4.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hisar</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hisar/Hisar5.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hyderabad</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hyd/Hyd1.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hyderabad</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hyd/Hyd2.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hyderabad</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hyd/Hyd3.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hyderabad</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hyd/Hyd4.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="sparkling-card">
+                    <div class="sparkname">
+                    <h4 class="text-primary text-center mb-3">Hyderabad</h4>
+                    </div>
+                    <div class="sparkling-img"> <img src="assets/images/Hyd/Hyd5.JPG" alt="img" width="100%" class="img-fluid"> </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="future-family-section position-relative py-3 py-sm-5 bg-primary overflow-hidden">
+    <div class="container">
+        <div class="row align-items-center align-items-md-start">
+        <div class="col-7 col-md-7">
+            <div class="future-content">
+            <h1 class="bold text-white">Future Franchise Family</h1>
+            <h1 class="text-2 store-text">15+ Stores</h1>
+            <div class="line-div-box"> 
+                <!--<ul class="lineul">
+
+                                <li>City</li>
+                                <li>City</li>
+                                <li>City</li>
+                            </ul>-->
+                <div class="citystatetable">
+                <table class="table table-borderless text-white">
+                    <tr>
+                    <!-- <th><b>City</b></th>-->
+                    <th colspan="2"><b>Store Location</b></th>
+                    </tr>
+                    <tr>
+                    <td>J & K</td>
+                    <td>Gandhi Nagar</td>
+                    </tr>
+                    <tr>
+                    <td>Maharashtra</td>
+                    <td>R City</td>
+                    </tr>
+                    <tr>
+                    <td>Bihar</td>
+                    <td>Kashi Bazar</td>
+                    </tr>
+                    <tr>
+                    <td>Chhattisgarh</td>
+                    <td>Bhilai</td>
+                    </tr>
+                    <tr>
+                    <td>Telangana</td>
+                    <td>Kukatpally</td>
+                    </tr>
+                    <tr>
+                    <td>Telangana</td>
+                    <td>Somajiguda</td>
+                    </tr>
+                    <tr>
+                    <td>Telangana</td>
+                    <td>InOrbit Mall</td>
+                    </tr>
+                    <tr>
+                    <td>Telangana</td>
+                    <td>Chandan Nagar</td>
+                    </tr>
+                    <tr>
+                    <td>Andhra Pradesh</td>
+                    <td>M.G. Road, Vijaywada</td>
+                    </tr>
+                    <tr>
+                    <td>Manipur</td>
+                    <td>Thangal Bazaar</td>
+                    </tr>
+                    <tr>
+                    <td>Uttar Pradesh</td>
+                    <td>Begumbridge Road, Meerut</td>
+                    </tr>
+                    <tr>
+                    <td>Tripura</td>
+                    <td>Mantribari Road</td>
+                    </tr>
+                    <tr>
+                    <td>Odisha</td>
+                    <td>Janpath</td>
+                    </tr>
+                    <tr>
+                    <td>Uttar Pradesh</td>
+                    <td>Civil Lines, Prayagraj</td>
+                    </tr>
+                    <tr>
+                    <td>Delhi</td>
+                    <td>Preet Vihar</td>
+                    </tr>
+                    <tr>
+                    <td>Karnataka</td>
+                    <td>Jayanagar</td>
+                    </tr>
+                    <tr>
+                    <td>Karnataka</td>
+                    <td>Koramangala</td>
+                    </tr>
+                </table>
+                </div>
+                <a href="#" class="btn btn-lg btn2 btn-anim" data-bs-toggle="modal" data-bs-target="#Inquiry-Modal"> Bring KISNA to your city </a> </div>
+            </div>
+        </div>
+        <div class="col-5 col-md-5 ps-0 ps-sm-2">
+            <div class="indian-map"> <img src="assets/images/india-map.png" alt="img" class="img-fluid"> </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="marketing-section position-relative py-3 py-sm-5">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6">
+            <div class="marketing-benefits-slider">
+            <div class="marketing-slider owl-carousel owl-theme">
+                <div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/iGYPCb5kBs8?si=81X-Ut-kGdoKtoBe"></a></div>
+                <div class="item-video" data-merge="2"><a class="owl-video" href="https://youtu.be/iGYPCb5kBs8?si=81X-Ut-kGdoKtoBe"></a></div>
+                <div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/iGYPCb5kBs8?si=81X-Ut-kGdoKtoBe"></a></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="marketing-content">
+            <h1 class="text-primary mb-4 bold"> Marketing Benefits </h1>
+            <p class="text-primary mb-3">"The mysterious forest whispered secrets to those who dared to listen. The moonlight painted silver strokes across the ancient trees, creating a surreal dance of shadows. In the heart of this enchanted realm, a forgotten tale unfolded, where time itself seemed to lose its way.</p>
+            <p class="text-primary mb-3">With <span class="bold">50,00,000+</span> social media reach and <span class="bold">7,94,000+</span> followers on social media platforms, the brand offers visibility pan India.</p>
+            <p class="text-primary mb-3">Our tailor-made marketing approach caters to brand stores and franchise partners together.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="media-cover-secction bg2 py-3 py-sm-5">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <h1 class="bold mb-4 text-center text-md-start text-primary"> Media coverage </h1>
+            <div class="media-slider owl-carousel owl-theme">
+            <div class="item">
+                <div class="media-img"> <img src="assets/images/media1.png" alt="img" class="img-fluid"> </div>
+            </div>
+            <div class="item">
+                <div class="media-img"> <img src="assets/images/media2.png" alt="img" class="img-fluid"> </div>
+            </div>
+            <div class="item">
+                <div class="media-img"> <img src="assets/images/media3.png" alt="img" class="img-fluid"> </div>
+            </div>
+            <div class="item">
+                <div class="media-img"> <img src="assets/images/media4.png" alt="img" class="img-fluid"> </div>
+            </div>
+            <div class="item">
+                <div class="media-img"> <img src="assets/images/media5.png" alt="img" class="img-fluid"> </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="partner-form-section">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="partner-form-div">
+            <div class="partner-form">
+                <h1 class="text-uppercase text-primary extrabold mb-4"> Become a Franchise
+                Partner </h1>
+                            <form method="post" action="" id="BottomForm" name="BottomForm" accept-charset="UTF-8" class="contact-form">
+                <input type="hidden" name="utm_source" value="facebook">
+                <input type="hidden" name="utm_medium" value="franchise">
+                <input type="hidden" name="utm_campaign" value="">
+                <input type="hidden" name="utm_content" value="">
+                <input type="hidden" name="utm_term" value="">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="full_name" placeholder="Name*">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" maxlength="10" placeholder="Mobile*" name="phone_number">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email*" name="email_address">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="City*" name="city">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="State*" name="state">
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Pincode*" name="pincode">
+                </div>
+                <div class="mb-3">
+                    <select class="form-control" name="budget">
+                    <option value="">Select Budget</option>
+                    <option value="5 Crores">5 Crores</option>
+                    <option value="7 Crores">7 Crores</option>
+                    <option value="10 Crores">10 Crores</option>
+                    <option value="15 Crores">15 Crores</option>
+                    </select>
+                </div>
+                <div class="btn-div">
+                    <input type="hidden" name="senddata" id="senddata" value="BottomForm">
+                    <input type="hidden" name="token" value="">
+                    <button type="submit" id="bottom_btn" class="btn btn-primary"> Verify & Submit </button>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer class="main-footer bg-primary py-3">
+    <div class="container">
+        <div class="top-footer">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+            <div class="footer-contact-div">
+                <ul class="contact-header-ul justify-content-start mb-md-2">
+                <li> <a href="mailto:workoutbuddy123@gmail.com"> <i class="far fa-envelope"></i> workoutbuddy123@gmail.com </a> </li>
+                </ul>
+                <ul class="contact-header-ul justify-content-start">
+                <li> <a href="tel:+91-2267160000" > <img src="assets/images/phone-icon.png" width="15"> +91-2267160000 </a> </li>
+                <li> <a href="tel:+91-9152484423"> <i class="fab fa-whatsapp"></i> +91-9152484423 </a> </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="row">
+            <div class="col-md-4">
+                <ul class="social-ul justify-content-md-start justify-content-center mb-4 mb-md-0">
+                <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+                <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                <li> <a href="#"> <i class="fab fa-youtube"></i> </a> </li>
+                <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <p class="bold text-center text-md-end text-white">  All Rights Reserved. <br> Powered By: WorkoutBuddy </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </footer>
+</body>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.validate.js"></script>
+<script src="assets/js/additional-methods.js"></script>
+ <script src="assets/js/custom.js"></script>
+<script>
+jQuery(document).ready(function($)
+{
+	
+	 jQuery('form').each(function () {
+		jQuery(this).validate(
+		{
+			errorElement:'div',
+		rules: {
+			full_name: 
+			{
+				required: true,
+				lettersonly:true,
+				maxlength:99
+			},
+			email_address: 
+			{
+				required: true,
+				email:true
+			},
+			phone_number: 
+			{
+				required: true,
+				digits:true,
+				minlength:10,
+				maxlength:10
+				
+			},
+			pincode: 
+			{
+				required: true
+			},
+			city: 
+			{
+				required: true
+			},
+			state: 
+			{
+				required: true
+			},
+			pincode: 
+			{
+			    required: true,
+				digits:true,
+				minlength:6,
+				maxlength:6
+			},
+			budget: 
+			{
+				required: true
+			}
+		},
+		messages:
+		 {
+			full_name: 
+			{
+				required: "Please enter full name",
+				lettersonly:"Please enter full name in alphabets only",
+				maxlength:"Name should not be more than 99 letters"
+			},
+			email_address: 
+			{
+				required: "Please enter email address",
+				email: "Please enter valid email address"
+			},
+			phone_number: 
+			{
+				required: "Please enter phone number",
+				digits: "Please enter valid phone number",
+				minlength:"Mobile number should be 10 digits only",
+				maxlength:"Mobile number should be 10 digits only"
+			},
+			pincode: 
+			{
+				required: "Please enter pin code"
+			},
+			city: 
+			{
+				required: "Please enter city"
+			},
+			state: 
+			{
+				required: "Please enter state"
+			},
+			pincode: 
+			{
+				required: "Please enter pincode",
+				digits: "Please enter valid pincode",
+				minlength:"Pincode should be 6 digits only",
+				maxlength:"Pincode should be 6 digits only"
+			},
+			budget: 
+			{
+				required: "Please select budget"
+			}
+		}
+	});
+  });
+});
+</script>
+<script>
+    $('.sparkling-slider').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        items:1,
+        center:true,
+        autoplay: true,
+        autoplayTimeout:3000,
+        autoplayHoverPause: true,
+        dots:true,
+        responsive:{
+            767:{
+                items:1
+            },
+            768: {
+                items:3,
+            }
+        }
+    })
+</script>
+<script>
+    $(function() {
+        $('.marketing-slider').owlCarousel({
+            items: 1,
+            loop: true,
+            video: true,
+            lazyLoad: true,
+            autoplay: true,
+            autoplayTimeout:3000,
+            autoplayHoverPause: true,
+        });
+    });
+</script>
+<script>
+    $('.our-core-slider').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        autoplay:false,
+        autoplayHoverPause:false,
+        items:1,
+        dots:true,
+        responsive:{
+            767:{
+                items:1,
+
+            },
+            768: {
+                items:3,
+            }
+        }
+    })
+</script>
+<script>
+    $('.our-core-slider-mobile').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        autoplay:true,
+        autoplayHoverPause:false,
+        items:1,
+        dots:true,
+        responsive:{
+            767:{
+                items:1,
+            },
+            768: {
+                items:3,
+            }
+        }
+    })
+</script>
+<script>
+    $('.media-slider').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        center:true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        dots:true,
+        responsive:{
+            767:{
+                items:1,
+            },
+            768: {
+                items:5,
+            }
+        }
+    })
+</script>
+<script>
+    $('.keyofferings-slider').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        items:1,
+        autoplay: true,
+        autoplayHoverPause: true,
+        dots:true,
+        responsive:{
+            767:{
+                items:1,
+            },
+            768: {
+                items:6,
+            }
+        }
+    })
+</script>
+<script>
+    /* ==========================================
+scrollTop() >= 300
+Should be equal the the height of the header
+========================================== */
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 300) {
+            $('.main-header').addClass('fixed-header');
+        }
+        else {
+            $('.main-header').removeClass('fixed-header');
+        }
+    });
+
+</script>
+</html>
